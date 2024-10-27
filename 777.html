@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加法计算器</title>
+</head>
+<body>
+    <h2>简单加法计算器</h2>
+    <input type="text" id="num1" placeholder="输入第一个数字">
+    <input type="text" id="num2" placeholder="输入第二个数字">
+    <button onclick="calculateSum()">计算和</button>
+    <script>
+        function calculateSum() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+            alert("请输入有效的数字");
+            return;
+}
+            let sum = num1 + num2;
+            alert("两个数字的和为: " + sum);
+            
+}
+        
+    </script>
+</body>
+</html>
